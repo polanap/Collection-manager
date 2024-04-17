@@ -1,18 +1,20 @@
-## Getting Started
+## Описание проекта:
+Консольное приложение, которое реализует управление коллекцией объектов в интерактивном режиме. В коллекции хранятся объекты класса HumanBeing.
+В интерактивном режиме программа поддерживает выполнение следующих команд:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- help : вывести справку по доступным командам
+- info : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)
+- show : вывести в стандартный поток вывода все элементы коллекции в строковом представлении
+- insert null {element} : добавить новый элемент с заданным ключом
+- update id {element} : обновить значение элемента коллекции, id которого равен заданному
+- remove_key null : удалить элемент из коллекции по его ключу
+- clear : очистить коллекцию
+- save : сохранить коллекцию в файл
+- execute_script file_name : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.
+- exit : завершить программу (без сохранения в файл)
+- remove_lower {element} : удалить из коллекции все элементы, меньшие, чем заданный
+- replace_if_lowe null {element} : заменить значение по ключу, если новое значение меньше старого
+- remove_lower_key null : удалить из коллекции все элементы, ключ которых меньше, чем заданный
+- sum_of_impact_speed : вывести сумму значений поля impactSpeed для всех элементов коллекции
+- count_by_car car : вывести количество элементов, значение поля car которых равно заданному
+- count_less_than_impact_speed impactSpeed : вывести количество элементов, значение поля impactSpeed которых меньше заданного
