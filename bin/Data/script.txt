@@ -1,0 +1,5 @@
+show
+help 
+clear
+execute_script src/Data/script2.txt
+show
